@@ -1,5 +1,5 @@
 .rainbow {
-    animation: rainbow 600ms;
+    animation: rainbow 2s;
     animation-iteration-count: infinite;
 }
 
