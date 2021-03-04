@@ -1,3 +1,7 @@
+body {
+    background-color: blue !important;
+}
+
 .rainbow {
     animation: rainbow 2s;
     animation-iteration-count: infinite;
