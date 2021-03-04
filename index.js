@@ -11,3 +11,12 @@ function replaceText(element) {
         }
     }
 }
+trying(document.body)
+function trying(element) {
+    console.log("i am also running bro");
+    newElement = document.createElement('div');
+    newElement.setAttribute("id", "newObject");
+    document.body.appendChild(newElement);
+    console.log("i am also running bro");
+
+}

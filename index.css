@@ -1,5 +1,16 @@
-body {
+/* body {
     background-color: blue !important;
+}
+
+*/
+#newObject {
+    position: absolute !important;
+    top: 50% !important;
+    right: 0 !important;
+    height: 100px !important;
+    width: 200px !important;
+    z-index: 1 !important;
+    background-color: red !important;
 }
 
 .rainbow {
