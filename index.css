@@ -4,13 +4,12 @@
 
 */
 #newObject {
-    position: absolute !important;
-    top: 50% !important;
-    right: 0 !important;
-    height: 100px !important;
-    width: 200px !important;
-    z-index: 1 !important;
-    background-color: red !important;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: 100px;
+    width: 100px;
+    z-index: 1;
 }
 
 .rainbow {
@@ -20,30 +19,30 @@
 
 @keyframes rainbow {
     0% {
-        color: red;
+        background-color: red;
     }
 
     15% {
-        color: orange;
+        background-color: orange;
     }
 
     30% {
-        color: yellow;
+        background-color: yellow;
     }
 
     45% {
-        color: green;
+        background-color: green;
     }
 
     60% {
-        color: blue;
+        background-color: blue;
     }
 
     75% {
-        color: indigo;
+        background-color: indigo;
     }
 
     90% {
-        color: purple;
+        background-color: purple;
     }
 }

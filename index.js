@@ -16,6 +16,7 @@ function trying(element) {
     console.log("i am also running bro");
     newElement = document.createElement('div');
     newElement.setAttribute("id", "newObject");
+    newElement.setAttribute("class", "rainbow");
     document.body.appendChild(newElement);
     console.log("i am also running bro");
 
