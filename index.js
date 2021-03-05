@@ -11,13 +11,25 @@ function replaceText(element) {
         }
     }
 }
+function alertb() {
+    alert("yes working!");
+}
 trying(document.body)
 function trying(element) {
     console.log("i am also running bro");
     newElement = document.createElement('div');
+    newElementb = document.createElement('button');
     newElement.setAttribute("id", "newObject");
     newElement.setAttribute("class", "rainbow");
+    newElementb.setAttribute("id", "alertbc");
     document.body.appendChild(newElement);
+    newElement.appendChild(newElementb);
+
     console.log("i am also running bro");
 
+}
+document.getElementById("alertbc").onclick = function () { myFunction() };
+
+function myFunction() {
+    alert("yes u got it finally!");
 }
