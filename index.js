@@ -42,7 +42,10 @@ document.getElementById("alertbc").onclick = function () { myFunction() };
 document.getElementById("alertdc").onclick = function () { myFunctiond() };
 function myFunctiond() {
     var myCanvas = document.getElementById("myCanvas");
-    myCanvas.remove();
+    if (myCanvas != null) {
+        myCanvas.remove();
+    }
+    return;
 }
 
 

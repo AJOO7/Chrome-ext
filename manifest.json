@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "content_scripts": [
     {
+      // "matches": ["<all_urls>"],
       "matches": ["file:///C:/Users/Alisha/Desktop/4_sem_books/pp.jpg"],
       "js": ["index.js"],
       "css": ["index.css"]
