@@ -12,6 +12,7 @@
 //     }
 // }
 var size = 5;
+var points = [];
 trying(document.body)
 function trying(element) {
 
@@ -27,10 +28,13 @@ function trying(element) {
     newElement.setAttribute("id", "newObject");
     newElement.setAttribute("class", "rainbow");
     newElementb.setAttribute("id", "alertbc");
+    newElementb.innerHTML = "NEW";
     newElementd.setAttribute("id", "alertdc");
+    newElementd.innerHTML = "DELETE";
     newElemente.setAttribute("id", "alertdcadd");
+    newElemente.innerHTML = "A+";
     newElementf.setAttribute("id", "alertdcsub");
-
+    newElementf.innerHTML = "A-";
     // newElementc.setAttribute("id", "myCanvas");
     document.body.appendChild(newElement);
     newElement.appendChild(newElementb);
@@ -162,55 +166,3 @@ function myFunction() {
     }
 
 };
-// function myFunction() {
-//     newElementc = document.createElement('canvas');
-//     newElementc.setAttribute("id", "myCanvas");
-//     document.body.appendChild(newElementc);
-//     let isDrawing = false;
-//     let x = 0;
-//     let y = 0;
-
-//     const myCanvasObj = document.getElementById('myCanvas');
-//     myCanvasObj.width = window.innerWidth;
-//     myCanvasObj.hieght = window.innerHeight;
-//     const context = myCanvasObj.getContext('2d');
-//     context.fillStyle = "#00000000";
-//     context.fillRect(0, 0, myCanvasObj.width, myCanvasObj.height);
-
-
-//     // event.offsetX, event.offsetY gives the (x,y) offset from the edge of the canvas.
-
-//     // Add the event listeners for mousedown, mousemove, and mouseup
-//     myCanvasObj.addEventListener('mousedown', e => {
-//         x = e.offsetX;
-//         y = e.offsetY;
-//         isDrawing = true;
-//     });
-
-//     myCanvasObj.addEventListener('mousemove', e => {
-//         if (isDrawing === true) {
-//             drawLine(context, x, y, e.offsetX, e.offsetY);
-//             x = e.offsetX;
-//             y = e.offsetY;
-//         }
-//     });
-
-//     window.addEventListener('mouseup', e => {
-//         if (isDrawing === true) {
-//             drawLine(context, x, y, e.offsetX, e.offsetY);
-//             x = 0;
-//             y = 0;
-//             isDrawing = false;
-//         }
-//     });
-
-//     function drawLine(context, x1, y1, x2, y2) {
-//         context.beginPath();
-//         context.strokeStyle = 'black';
-//         context.lineWidth = 1;
-//         context.moveTo(x1, y1);
-//         context.lineTo(x2, y2);
-//         context.stroke();
-//         context.closePath();
-//     }
-// }
