@@ -20,13 +20,17 @@ function trying(element) {
     console.log("i am also running bro");
     newElement = document.createElement('div');
     newElementb = document.createElement('button');
+    newElementd = document.createElement('button');
+
     // newElementc = document.createElement('canvas');
     newElement.setAttribute("id", "newObject");
     newElement.setAttribute("class", "rainbow");
     newElementb.setAttribute("id", "alertbc");
+    newElementd.setAttribute("id", "alertdc");
     // newElementc.setAttribute("id", "myCanvas");
     document.body.appendChild(newElement);
     newElement.appendChild(newElementb);
+    newElement.appendChild(newElementd);
     // document.body.appendChild(newElementc);
 
 
@@ -35,6 +39,11 @@ function trying(element) {
 
 }
 document.getElementById("alertbc").onclick = function () { myFunction() };
+document.getElementById("alertdc").onclick = function () { myFunctiond() };
+function myFunctiond() {
+    var myCanvas = document.getElementById("myCanvas");
+    myCanvas.remove();
+}
 
 
 
