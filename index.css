@@ -46,3 +46,17 @@
         background-color: purple;
     }
 }
+
+#myCanvas {
+    cursor: crosshair;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    /* height: 500px; */
+    /* width: 500px; */
+    z-index: 1;
+
+    /* background-color: #ffffff; */
+    /* opacity: 0.5; */
+
+}
